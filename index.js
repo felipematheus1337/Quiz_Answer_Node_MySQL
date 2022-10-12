@@ -7,11 +7,13 @@ app.set("view engine","ejs");
 
 app.get("/:nome/:lang",(req,res) => {
    let {nome,lang} = req.params
+   var exibirMsg = false;
     res.render('index',{
         nome:nome,
         lang:lang,
         empresa: "Felipe Developer",
-        inscritos: 8000
+        inscritos: 8000,
+        msg: exibirMsg
     });
 
 });

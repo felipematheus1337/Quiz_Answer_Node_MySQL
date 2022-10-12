@@ -11,8 +11,14 @@
     <hr>
     <h3>Lista de perguntas</h3>
 
-    <%=  nome %>
-    <h1><%= lang %></h1>
-    
+    <h3><%=  nome %></h3>
+    <h3><%= lang %></h3>  
+    <h3><%= empresa%></h3>  
+
+    <% if(msg) { %>
+        <h3>isso é uma mensagem!</h3>
+    <%}  else { %>
+        <h3>isso é uma mensagem de erro!</h3>
+    <%}%>
 </body>
 </html>
